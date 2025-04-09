@@ -4,11 +4,11 @@ namespace BACKEND.Data
 {
 	public class FoodRepository : IFoodRepository
 	{
-		List<Food> foods;
+		private readonly List<Food> foods;
 
 		public FoodRepository()
 		{
-			List<Food> foods = new List<Food>();
+			foods = new List<Food>();
 		}
 
 		public void Create(Food food)

@@ -1,4 +1,4 @@
-﻿using BACKEND.Data;
+﻿using BACKEND.Services;
 using BACKEND.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -9,35 +9,35 @@ namespace BACKEND.Controllers
 	[Route("[controller]")]
 	public class FoodApiController : ControllerBase
 	{
-		IFoodRepository _repo;
+		private readonly IFoodService foodService;
 
-		public FoodApiController(IFoodRepository repo)
+		public FoodApiController(IFoodService foodService)
 		{
-			_repo = repo;
+			this.foodService = foodService;
 		}
 
 		[HttpGet]
 		public IEnumerable<Food> GetFoods()
 		{
-			return _repo.ReadAll();
+			return foodService.GetAllFoods();
 		}
 
 		[HttpGet("{name}")]
 		public Food? GetFood(string name)
 		{
-			return _repo.Read(name);
+			return foodService.GetFood(name);
 		}
 
 		[HttpPost]
 		public void CreateFood([FromBody] Food food)
 		{
-			_repo.Create(food);
+			foodService.CreateFood(food);
 		}
 
 		[HttpDelete("{name}")]
 		public void DeleteFood(string name)
 		{
-			_repo.Delete(name);
+			foodService.DeleteFood(name);
 		}
 	}
 

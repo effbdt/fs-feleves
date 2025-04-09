@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\DAVIDOF\\Desktop\\ELELMISZERKESZLETOPTIMALIZALAS_EFFBDT_SZASZ\\BACKEND\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{2747AEA2-88B0-4C2E-9FFF-3B8A7CF7C949}|BACKEND\\BACKEND.csproj|c:\\users\\davidof\\desktop\\elelmiszerkeszletoptimalizalas_effbdt_szasz\\backend\\backend\\data\\foodrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2747AEA2-88B0-4C2E-9FFF-3B8A7CF7C949}|BACKEND\\BACKEND.csproj|solutionrelative:backend\\data\\foodrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2747AEA2-88B0-4C2E-9FFF-3B8A7CF7C949}|BACKEND\\BACKEND.csproj|c:\\users\\davidof\\desktop\\elelmiszerkeszletoptimalizalas_effbdt_szasz\\backend\\backend\\services\\foodservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2747AEA2-88B0-4C2E-9FFF-3B8A7CF7C949}|BACKEND\\BACKEND.csproj|solutionrelative:backend\\services\\foodservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2747AEA2-88B0-4C2E-9FFF-3B8A7CF7C949}|BACKEND\\BACKEND.csproj|c:\\users\\davidof\\desktop\\elelmiszerkeszletoptimalizalas_effbdt_szasz\\backend\\backend\\controllers\\foodapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2747AEA2-88B0-4C2E-9FFF-3B8A7CF7C949}|BACKEND\\BACKEND.csproj|solutionrelative:backend\\controllers\\foodapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2747AEA2-88B0-4C2E-9FFF-3B8A7CF7C949}|BACKEND\\BACKEND.csproj|c:\\users\\davidof\\desktop\\elelmiszerkeszletoptimalizalas_effbdt_szasz\\backend\\backend\\data\\ifoodrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,14 +27,6 @@
       "RelativeMoniker": "D:0:0:{2747AEA2-88B0-4C2E-9FFF-3B8A7CF7C949}|BACKEND\\BACKEND.csproj|solutionrelative:backend\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2747AEA2-88B0-4C2E-9FFF-3B8A7CF7C949}|BACKEND\\BACKEND.csproj|c:\\users\\davidof\\desktop\\elelmiszerkeszletoptimalizalas_effbdt_szasz\\backend\\backend\\controllers\\foodapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2747AEA2-88B0-4C2E-9FFF-3B8A7CF7C949}|BACKEND\\BACKEND.csproj|solutionrelative:backend\\controllers\\foodapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2747AEA2-88B0-4C2E-9FFF-3B8A7CF7C949}|BACKEND\\BACKEND.csproj|c:\\users\\davidof\\desktop\\elelmiszerkeszletoptimalizalas_effbdt_szasz\\backend\\backend\\data\\foodrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2747AEA2-88B0-4C2E-9FFF-3B8A7CF7C949}|BACKEND\\BACKEND.csproj|solutionrelative:backend\\data\\foodrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2747AEA2-88B0-4C2E-9FFF-3B8A7CF7C949}|BACKEND\\BACKEND.csproj|c:\\users\\davidof\\desktop\\elelmiszerkeszletoptimalizalas_effbdt_szasz\\backend\\backend\\models\\food.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2747AEA2-88B0-4C2E-9FFF-3B8A7CF7C949}|BACKEND\\BACKEND.csproj|solutionrelative:backend\\models\\food.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -38,15 +38,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "FoodService.cs",
               "DocumentMoniker": "C:\\Users\\DAVIDOF\\Desktop\\ELELMISZERKESZLETOPTIMALIZALAS_EFFBDT_SZASZ\\BACKEND\\BACKEND\\Services\\FoodService.cs",
               "RelativeDocumentMoniker": "BACKEND\\Services\\FoodService.cs",
@@ -58,12 +62,8 @@
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\DAVIDOF\\Desktop\\ELELMISZERKESZLETOPTIMALIZALAS_EFFBDT_SZASZ\\BACKEND\\BACKEND\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "BACKEND\\Properties\\launchSettings.json",
@@ -75,19 +75,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "FoodApiController.cs",
               "DocumentMoniker": "C:\\Users\\DAVIDOF\\Desktop\\ELELMISZERKESZLETOPTIMALIZALAS_EFFBDT_SZASZ\\BACKEND\\BACKEND\\Controllers\\FoodApiController.cs",
               "RelativeDocumentMoniker": "BACKEND\\Controllers\\FoodApiController.cs",
               "ToolTip": "C:\\Users\\DAVIDOF\\Desktop\\ELELMISZERKESZLETOPTIMALIZALAS_EFFBDT_SZASZ\\BACKEND\\BACKEND\\Controllers\\FoodApiController.cs",
               "RelativeToolTip": "BACKEND\\Controllers\\FoodApiController.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAA1wCAAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T10:04:11.481Z"
+              "WhenOpened": "2025-04-09T10:04:11.481Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "IFoodRepository.cs",
               "DocumentMoniker": "C:\\Users\\DAVIDOF\\Desktop\\ELELMISZERKESZLETOPTIMALIZALAS_EFFBDT_SZASZ\\BACKEND\\BACKEND\\Data\\IFoodRepository.cs",
               "RelativeDocumentMoniker": "BACKEND\\Data\\IFoodRepository.cs",
@@ -95,20 +96,20 @@
               "RelativeToolTip": "BACKEND\\Data\\IFoodRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T09:56:38.586Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-09T09:56:38.586Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "FoodRepository.cs",
               "DocumentMoniker": "C:\\Users\\DAVIDOF\\Desktop\\ELELMISZERKESZLETOPTIMALIZALAS_EFFBDT_SZASZ\\BACKEND\\BACKEND\\Data\\FoodRepository.cs",
               "RelativeDocumentMoniker": "BACKEND\\Data\\FoodRepository.cs",
               "ToolTip": "C:\\Users\\DAVIDOF\\Desktop\\ELELMISZERKESZLETOPTIMALIZALAS_EFFBDT_SZASZ\\BACKEND\\BACKEND\\Data\\FoodRepository.cs",
               "RelativeToolTip": "BACKEND\\Data\\FoodRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T09:51:27.29Z"
+              "WhenOpened": "2025-04-09T09:51:27.29Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -124,7 +125,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\DAVIDOF\\Desktop\\ELELMISZERKESZLETOPTIMALIZALAS_EFFBDT_SZASZ\\BACKEND\\BACKEND\\Program.cs",
               "RelativeDocumentMoniker": "BACKEND\\Program.cs",
@@ -132,8 +133,7 @@
               "RelativeToolTip": "BACKEND\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T09:42:24.149Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-09T09:42:24.149Z"
             }
           ]
         }
