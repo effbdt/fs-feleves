@@ -39,7 +39,11 @@ namespace BACKEND.Controllers
 		{
 			foodService.DeleteFood(name);
 		}
+
+		[HttpGet("priorotized")]
+		public IEnumerable<Food> OrderByExprDate()
+		{
+			return foodService.OrderedByExpiration();
+		}
 	}
-
-
 }
