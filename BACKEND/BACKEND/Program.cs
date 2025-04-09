@@ -1,3 +1,5 @@
+using BACKEND.Data;
+
 namespace BACKEND
 {
 	public class Program
@@ -5,6 +7,10 @@ namespace BACKEND
 		public static void Main(string[] args)
 		{
 			var builder = WebApplication.CreateBuilder(args);
+
+			builder.Services.AddControllers();
+			builder.Services.AddSingleton<IFoodRepository, FoodRepository>();
+
 			var app = builder.Build();
 
 			app.UseRouting();
