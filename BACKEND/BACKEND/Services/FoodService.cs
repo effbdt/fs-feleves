@@ -31,5 +31,12 @@ namespace BACKEND.Services
 		{
 			_repo.Delete(food);
 		}
+
+		public IEnumerable<Food> OrderedByExpiration()
+		{
+			var foodList = _repo.ReadAll();
+
+			return foodList.OrderBy(f => f.ExpirationDate);
+		}
 	}
 }
