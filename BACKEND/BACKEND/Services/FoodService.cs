@@ -50,6 +50,8 @@ namespace BACKEND.Services
 			return suggestions;
 		}
 
+
+		//checks if expiration date is 2 days or less
 		private bool CloseToExpiration(DateTime date)
 		{
 			DateTime now = DateTime.Now;

@@ -45,5 +45,11 @@ namespace BACKEND.Controllers
 		{
 			return foodService.OrderedByExpiration();
 		}
+
+		[HttpGet("suggestions")]
+		public IEnumerable<Food> Suggestions()
+		{
+			return foodService.BuySuggestions();
+		}
 	}
 }
