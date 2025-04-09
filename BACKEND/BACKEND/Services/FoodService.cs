@@ -36,7 +36,29 @@ namespace BACKEND.Services
 		{
 			var foodList = _repo.ReadAll();
 
-			return foodList.OrderBy(f => f.ExpirationDate);
+			return foodList.OrderBy(f => f.ExpirationDate).ToList();
+		}
+
+		//if theres 1 or less, or it expires in the next 2 days it gets returned as a suggestion
+		public IEnumerable<Food> BuySuggestions()
+		{
+			var foodList = _repo.ReadAll();
+
+			var suggestions = foodList
+				.Where(f => f.Quantity < 2 || CloseToExpiration(f.ExpirationDate)).ToList();
+
+			return suggestions;
+		}
+
+		private bool CloseToExpiration(DateTime date)
+		{
+			DateTime now = DateTime.Now;
+
+			if ((now.CompareTo(date.AddDays(2)) <= 0))
+			{
+				return true;
+			}
+			return false;
 		}
 	}
 }

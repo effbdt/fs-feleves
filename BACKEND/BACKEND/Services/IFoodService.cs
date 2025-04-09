@@ -8,7 +8,7 @@ namespace BACKEND.Services
 		void DeleteFood(string food);
 		IEnumerable<Food> GetAllFoods();
 		Food? GetFood(string food);
-
 		IEnumerable<Food> OrderedByExpiration();
+		IEnumerable<Food> BuySuggestions();
 	}
 }
