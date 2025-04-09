@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\DAVIDOF\\Desktop\\ELELMISZERKESZLETOPTIMALIZALAS_EFFBDT_SZASZ\\BACKEND\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{2747AEA2-88B0-4C2E-9FFF-3B8A7CF7C949}|BACKEND\\BACKEND.csproj|c:\\users\\davidof\\desktop\\elelmiszerkeszletoptimalizalas_effbdt_szasz\\backend\\backend\\data\\ifoodrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2747AEA2-88B0-4C2E-9FFF-3B8A7CF7C949}|BACKEND\\BACKEND.csproj|solutionrelative:backend\\data\\ifoodrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2747AEA2-88B0-4C2E-9FFF-3B8A7CF7C949}|BACKEND\\BACKEND.csproj|c:\\users\\davidof\\desktop\\elelmiszerkeszletoptimalizalas_effbdt_szasz\\backend\\backend\\data\\foodrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2747AEA2-88B0-4C2E-9FFF-3B8A7CF7C949}|BACKEND\\BACKEND.csproj|solutionrelative:backend\\data\\foodrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2747AEA2-88B0-4C2E-9FFF-3B8A7CF7C949}|BACKEND\\BACKEND.csproj|c:\\users\\davidof\\desktop\\elelmiszerkeszletoptimalizalas_effbdt_szasz\\backend\\backend\\models\\food.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2747AEA2-88B0-4C2E-9FFF-3B8A7CF7C949}|BACKEND\\BACKEND.csproj|solutionrelative:backend\\models\\food.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -27,6 +35,36 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "IFoodRepository.cs",
+              "DocumentMoniker": "C:\\Users\\DAVIDOF\\Desktop\\ELELMISZERKESZLETOPTIMALIZALAS_EFFBDT_SZASZ\\BACKEND\\BACKEND\\Data\\IFoodRepository.cs",
+              "RelativeDocumentMoniker": "BACKEND\\Data\\IFoodRepository.cs",
+              "ToolTip": "C:\\Users\\DAVIDOF\\Desktop\\ELELMISZERKESZLETOPTIMALIZALAS_EFFBDT_SZASZ\\BACKEND\\BACKEND\\Data\\IFoodRepository.cs",
+              "RelativeToolTip": "BACKEND\\Data\\IFoodRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T09:56:38.586Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FoodRepository.cs",
+              "DocumentMoniker": "C:\\Users\\DAVIDOF\\Desktop\\ELELMISZERKESZLETOPTIMALIZALAS_EFFBDT_SZASZ\\BACKEND\\BACKEND\\Data\\FoodRepository.cs",
+              "RelativeDocumentMoniker": "BACKEND\\Data\\FoodRepository.cs",
+              "ToolTip": "C:\\Users\\DAVIDOF\\Desktop\\ELELMISZERKESZLETOPTIMALIZALAS_EFFBDT_SZASZ\\BACKEND\\BACKEND\\Data\\FoodRepository.cs",
+              "RelativeToolTip": "BACKEND\\Data\\FoodRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T09:51:27.29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Food.cs",
               "DocumentMoniker": "C:\\Users\\DAVIDOF\\Desktop\\ELELMISZERKESZLETOPTIMALIZALAS_EFFBDT_SZASZ\\BACKEND\\BACKEND\\Models\\Food.cs",
               "RelativeDocumentMoniker": "BACKEND\\Models\\Food.cs",
@@ -38,12 +76,8 @@
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\DAVIDOF\\Desktop\\ELELMISZERKESZLETOPTIMALIZALAS_EFFBDT_SZASZ\\BACKEND\\BACKEND\\Program.cs",
               "RelativeDocumentMoniker": "BACKEND\\Program.cs",
@@ -51,8 +85,7 @@
               "RelativeToolTip": "BACKEND\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T09:42:24.149Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-09T09:42:24.149Z"
             }
           ]
         }
