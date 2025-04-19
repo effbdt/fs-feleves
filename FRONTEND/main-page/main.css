@@ -1,6 +1,5 @@
 body {
 
-    /* background-color: #ccf5d3; */
     background-color: #ccf5d3;
 }
 
@@ -64,7 +63,6 @@ body {
 
 h1 {
     background: linear-gradient(90deg, #38d39f, #30cfcf);
-    /* background-color: #38d39f; */
     padding: 20px;
     font-size: 2rem;
     color: #fff;
@@ -98,3 +96,6 @@ img {
 table {
     margin-top: 20px;
 }
+
+
+
