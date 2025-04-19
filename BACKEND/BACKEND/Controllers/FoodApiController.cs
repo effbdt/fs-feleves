@@ -29,9 +29,10 @@ namespace BACKEND.Controllers
 		}
 
 		[HttpPost]
-		public void CreateFood([FromBody] Food food)
+		public IActionResult CreateFood([FromBody] Food food)
 		{
 			foodService.CreateFood(food);
+			return Ok();
 		}
 
 		[HttpDelete("{name}")]
