@@ -19,34 +19,55 @@
 function listByExpiration() {
     fetch('http://localhost:5006/foodapi/priorotized', {
         method: 'GET',
-        headers: {'Content-Type': 'application/json'}
+        headers: { 'Content-Type': 'application/json' }
     })
-    .then(resp => {
-        console.log('Response: ', resp)
-        if (resp.status === 200) {
-            document.querySelector('.table').classList.remove('conditional-show')
-            return resp.json()
-        }
-    })
-    .then(foodList => {
-        let tableBody = document.querySelector('#prioritized-list')
-        tableBody.innerHTML = ''
-        
-        foodList.forEach(food => {
-            let tr = document.createElement('tr')
-            
-            let nameTd = document.createElement('td')
-            let dateTd = document.createElement('td')
+        .then(resp => {
+            console.log('Response: ', resp)
+            if (resp.status === 200) {
+                return resp.json()
+            }
+        })
+        .then(foodList => {
+            if (!foodList || foodList.length === 0) {
+                return
+            }
+                document.querySelector('.table').classList.remove('conditional-show')
+            let tableBody = document.querySelector('#prioritized-list')
+            tableBody.innerHTML = ''
 
-            nameTd.innerHTML = food.name
-            dateTd.innerHTML = food.expirationDate.split('T')[0]
+            const today = new Date()
+            //this sets the hours to 0 in the day
+            today.setHours(0, 0, 0, 0);
 
-            tr.appendChild(nameTd)
-            tr.appendChild(dateTd)
+            foodList.forEach(food => {
+                let tr = document.createElement('tr')
 
-            tableBody.appendChild(tr)
-        });
-    })
-   
+                let nameTd = document.createElement('td')
+                let dateTd = document.createElement('td')
+
+                nameTd.innerHTML = food.name
+                dateTd.innerHTML = food.expirationDate.split('T')[0]
+
+                tr.appendChild(nameTd)
+                tr.appendChild(dateTd)
+
+                let expiration = new Date(food.expirationDate)
+                let timeDifference = expiration - today
+                //difference is in milliseconds so this is how you calculate it into days
+                let dayDifference = timeDifference / (1000 * 60 * 60 * 24)
+
+
+                console.log(dayDifference)
+                if (dayDifference <= 2) {
+                    tr.classList.add('table-danger')
+                }
+                else if (dayDifference <= 5) {
+                    tr.classList.add('table-warning')
+                }
+
+                tableBody.appendChild(tr)
+            });
+        })
+
 }
 
