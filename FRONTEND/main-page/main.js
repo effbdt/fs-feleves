@@ -38,7 +38,7 @@ async function downloadAndDisplay() {
         deleteButton.classList.add('btn')
         deleteButton.classList.add('btn-danger')
         deleteButton.innerHTML = 'Delete'
-        deleteButton.idParameter = x.Name
+        deleteButton.idParameter = x.name
         deleteButton.addEventListener('click', deleteFood)
         delTd.appendChild(deleteButton)
 
@@ -51,10 +51,9 @@ downloadAndDisplay()
 
 
 function deleteFood(event) {
-    fetch('http://localhost:5006/foodapi' + event.target.idParameter, {
+    fetch(`http://localhost:5006/foodapi/${encodeURIComponent(event.target.idParameter)}`, {
         method: 'DELETE',
-        headers: { 'Content-Type': 'application/json', },
-        body: null
+        headers: { 'Content-Type': 'application/json', }
     })
         .then(resp => {
             console.log('Response: ', resp)
@@ -92,5 +91,5 @@ function createFood() {
         })
         .catch(error => console.log(error));
 
-        reset()
+    reset()
 }
