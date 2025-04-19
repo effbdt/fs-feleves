@@ -7,8 +7,10 @@ async function downloadAndDisplay() {
     console.log(foods)
 
     if (Array.isArray(foods) && foods.length > 0) {
-        let table = document.querySelector('.table')
-        table.classList.remove('conditional-show')
+        document.querySelector('#main-table').classList.remove('conditional-show')
+    }
+    else {
+        document.querySelector('#main-table').classList.add('conditional-show')
     }
 
     document.querySelector('#table-body').innerHTML = ''
@@ -37,7 +39,7 @@ async function downloadAndDisplay() {
         let deleteButton = document.createElement('button')
         deleteButton.classList.add('btn')
         deleteButton.classList.add('btn-danger')
-        deleteButton.innerHTML = 'Delete'
+        deleteButton.innerHTML = 'Törlés'
         deleteButton.idParameter = x.name
         deleteButton.addEventListener('click', deleteFood)
         delTd.appendChild(deleteButton)
@@ -61,6 +63,7 @@ function deleteFood(event) {
             if (resp.status === 200) {
                 downloadAndDisplay()
             }
+
         })
 }
 
