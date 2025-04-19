@@ -27,7 +27,7 @@
         </div>
         <div class="service1button-grid">
             <h2>Lejárati dátum szerinti lista:</h2>
-            <button class="btn custom-btn">Listázás</button>
+            <button onclick="listByExpiration()" class="btn custom-btn">Listázás</button>
         </div>
         <div class="service2button-grid">
             <h2>Vásárlási ajánlatok:</h2>
@@ -41,9 +41,9 @@
             <table class="table table-hover conditional-show" border="1px">
                 <thead>
                     <th>Élelmiszer</th>
-                    <th>Darabszám</th>
                     <th>Lejárati dátum</th>
                 </thead>
+                <tbody id="prioritized-list"></tbody>
             </table>
         </div>
         <div class="service2-grid">
@@ -66,6 +66,7 @@
         </div>
     </div>
 
+    <script src="services.js"></script>
 </body>
 
 </html>

@@ -51,6 +51,7 @@ downloadAndDisplay()
 
 
 function deleteFood(event) {
+    //this way spaces dont break the code, since the parameter is a name string
     fetch(`http://localhost:5006/foodapi/${encodeURIComponent(event.target.idParameter)}`, {
         method: 'DELETE',
         headers: { 'Content-Type': 'application/json', }
