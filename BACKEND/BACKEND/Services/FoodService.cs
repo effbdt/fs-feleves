@@ -71,7 +71,9 @@ namespace BACKEND.Services
 				estimatedConsumptionList.Add(RatioEstimation(food));
 			}
 
-			return estimatedConsumptionList;
+			var orderedList = estimatedConsumptionList.OrderDescending();
+
+			return orderedList;
 		}
 
 

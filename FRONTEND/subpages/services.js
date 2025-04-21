@@ -11,6 +11,8 @@ function listByExpiration() {
         })
         .then(foodList => {
             if (!foodList || foodList.length === 0) {
+                alert('A lista üres!')
+
                 return
             }
             document.querySelector('#service1-table').classList.remove('conditional-show')
@@ -63,8 +65,7 @@ function suggestionsList() {
         })
         .then(foodList => {
             if (!foodList || foodList.length === 0) {
-                let p = document.createElement('p')
-                p.innerHTML = 'Nincs ajánlani való elem!'
+                alert('Nincs ajánlani való elem!')
 
                 return
             }
@@ -92,4 +93,59 @@ function suggestionsList() {
         })
 }
 
+let allFoods = []
 
+async function download() {
+    const response = await fetch('http://localhost:5006/foodapi')
+    const foods = await response.json()
+    console.log(foods)
+
+    allFoods = []
+
+    foods.map(x => {
+        allFoods.push(x)
+    })
+}
+
+download()
+
+function foodRationEstimation() {
+    fetch('http://localhost:5006/foodapi/estimation', {
+        method: 'GET',
+        headers: { 'Content-Type': 'application/json' }
+    })
+        .then(resp => {
+            console.log('Response: ', resp)
+            if (resp.status === 200) {
+                return resp.json()
+            }
+        })
+        .then(usageEstimation => {
+            if (!usageEstimation || usageEstimation.length === 0) {
+                alert('A lista üres!')
+
+                return
+            }
+
+            document.querySelector('#service3-table').classList.remove('conditional-show')
+            let estimationTable = document.querySelector('#estimation-list')
+            estimationTable.innerHTML = ''
+
+            for (let i = 0; i < allFoods.length; i++) {
+                console.log(i)
+
+                let tr = document.createElement('tr')
+
+                let nameTd = document.createElement('td')
+                let estimationTd = document.createElement('td')
+
+                nameTd.innerHTML = allFoods[i].name
+                estimationTd.innerHTML = Math.ceil(usageEstimation[i]) + ' ' + 'db'
+
+                tr.appendChild(nameTd)
+                tr.appendChild(estimationTd)
+
+                estimationTable.appendChild(tr)
+            }
+        })
+}

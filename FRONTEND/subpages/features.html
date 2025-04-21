@@ -34,8 +34,8 @@
             <button onclick="suggestionsList()" class="btn custom-btn">Ajánlatok</button>
         </div>
         <div class="service3button-grid">
-            <h2>placeholder</h2>
-            <button class="btn custom-btn">placeholder</button>
+            <h2>Élelmiszerek havi használatának becslése:</h2>
+            <button onclick="foodRationEstimation()" class="btn custom-btn">Becslés</button>
         </div>
         <div class="service1-grid">
             <table id="service1-table" class="table table-hover table-sm table-bordered conditional-show">
@@ -60,10 +60,9 @@
             <table id="service3-table" class="table table-hover table-sm table-bordered conditional-show">
                 <thead>
                     <th>Élelmiszer</th>
-                    <th>Darabszám</th>
-                    <th>Lejárati dátum</th>
+                    <th>Havi használati becslés</th>
                 </thead>
-                <tbody class="table-group-divider" id="placeholder-list"></tbody>
+                <tbody class="table-group-divider" id="estimation-list"></tbody>
             </table>
         </div>
     </div>

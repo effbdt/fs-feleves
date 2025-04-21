@@ -55,7 +55,7 @@ namespace BACKEND.Controllers
 		}
 
 		[HttpGet("estimation")]
-		public IEnumerable<double> MonthlyEstimation(Food food)
+		public IEnumerable<double> MonthlyEstimation()
 		{
 			return foodService.MonthlyEstimation();
 		}
