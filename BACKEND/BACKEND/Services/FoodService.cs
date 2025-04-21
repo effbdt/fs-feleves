@@ -59,5 +59,21 @@ namespace BACKEND.Services
 
 			return date <= now.AddDays(1) && date <= twoDaysLater;
 		}
+
+
+		//gives a rough estimation on monthly usage of a given food item
+		public double RatioEstimation(Food food)
+		{
+			double dayUntilExp = (food.ExpirationDate - DateTime.Now).TotalDays;
+
+			if (dayUntilExp <= 0)
+			{
+				return 0;
+			}
+
+			double estimatedDailyUsage = food.Quantity / dayUntilExp;
+
+			return estimatedDailyUsage * 30;
+		}
 	}
 }

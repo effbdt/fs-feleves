@@ -36,9 +36,10 @@ namespace BACKEND.Controllers
 		}
 
 		[HttpDelete("{name}")]
-		public void DeleteFood(string name)
+		public IActionResult DeleteFood(string name)
 		{
 			foodService.DeleteFood(name);
+			return Ok();
 		}
 
 		[HttpGet("priorotized")]
@@ -52,5 +53,12 @@ namespace BACKEND.Controllers
 		{
 			return foodService.BuySuggestions();
 		}
+
+		[HttpGet("estimation")]
+		public double MonthlyEstimation(Food food)
+		{
+			return foodService.RatioEstimation(food);
+		}
+
 	}
 }

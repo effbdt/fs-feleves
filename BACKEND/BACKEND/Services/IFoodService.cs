@@ -10,5 +10,7 @@ namespace BACKEND.Services
 		Food? GetFood(string food);
 		IEnumerable<Food> OrderedByExpiration();
 		IEnumerable<Food> BuySuggestions();
+
+		double RatioEstimation(Food food);
 	}
 }
