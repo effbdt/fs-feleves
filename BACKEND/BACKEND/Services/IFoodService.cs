@@ -11,6 +11,6 @@ namespace BACKEND.Services
 		IEnumerable<Food> OrderedByExpiration();
 		IEnumerable<Food> BuySuggestions();
 
-		double RatioEstimation(Food food);
+		IEnumerable<double> MonthlyEstimation();
 	}
 }

@@ -61,8 +61,22 @@ namespace BACKEND.Services
 		}
 
 
+		public IEnumerable<double> MonthlyEstimation()
+		{
+			var foods = _repo.ReadAll();
+
+			List<double> estimatedConsumptionList = new List<double>();
+			foreach (var food in foods)
+			{
+				estimatedConsumptionList.Add(RatioEstimation(food));
+			}
+
+			return estimatedConsumptionList;
+		}
+
+
 		//gives a rough estimation on monthly usage of a given food item
-		public double RatioEstimation(Food food)
+		private double RatioEstimation(Food food)
 		{
 			double dayUntilExp = (food.ExpirationDate - DateTime.Now).TotalDays;
 
