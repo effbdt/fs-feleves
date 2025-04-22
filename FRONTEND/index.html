@@ -25,13 +25,16 @@
 
         <div class="data-entry">
             <h2>Élelmiszer hozzáadása:</h2> <br>
-            Élelmiszer neve: <br>
-            <input class="form-control" id="name-entry" type="text" placeholder="Élelmiszer neve"> <br>
-            Darabszám: <br>
-            <input class="form-control" id="quantity-entry" type="number" min="0" placeholder="Darabszám"> <br>
-            Lejárati dátum: <br>
-            <input class="form-control" id="date-entry" type="date"> <br>
-            <button onclick="createFood()" class="btn btn-success">Hozzáadás</button>
+            <form autocomplete="off" onsubmit="createFood(); return false;">
+                Élelmiszer neve: <br>
+                <input class="form-control" id="name-entry" type="text" placeholder="Élelmiszer neve" required> <br>
+                Darabszám: <br>
+                <input class="form-control" id="quantity-entry" type="number" min="1" placeholder="Darabszám" required>
+                <br>
+                Lejárati dátum: <br>
+                <input class="form-control" id="date-entry" type="date" required> <br>
+                <input class="btn btn-success form-control" type="submit" value="Hozzáadás">
+            </form>
         </div>
         <h2 class="conditional-show">Élelmiszerek:</h2>
 

@@ -27,6 +27,7 @@ async function downloadAndDisplay() {
         let delTd = document.createElement('td')
 
         nametd.innerHTML = x.name
+
         quantitytd.innerHTML = x.quantity
         datetd.innerHTML = x.expirationDate.split('T')[0]
 
@@ -35,7 +36,6 @@ async function downloadAndDisplay() {
         tr.appendChild(datetd)
         tr.appendChild(delTd)
 
-
         let deleteButton = document.createElement('button')
         deleteButton.classList.add('btn')
         deleteButton.classList.add('btn-danger')
@@ -43,7 +43,6 @@ async function downloadAndDisplay() {
         deleteButton.idParameter = x.name
         deleteButton.addEventListener('click', deleteFood)
         delTd.appendChild(deleteButton)
-
 
         document.querySelector('#table-body').appendChild(tr)
     })
