@@ -8,9 +8,11 @@ async function downloadAndDisplay() {
 
     if (Array.isArray(foods) && foods.length > 0) {
         document.querySelector('#main-table').classList.remove('conditional-show')
+        document.querySelector('#table-header').classList.remove('conditional-show')
     }
     else {
         document.querySelector('#main-table').classList.add('conditional-show')
+        document.querySelector('#table-header').classList.add('conditional-show')
     }
 
     document.querySelector('#table-body').innerHTML = ''
@@ -90,9 +92,12 @@ function createFood() {
             console.log('Response: ', resp)
             if (resp.status === 200) {
                 downloadAndDisplay()
+                reset()
+            } else {
+                return resp.text().then(text => alert(text))  
             }
         })
-        .catch(error => console.log(error));
-
-    reset()
+        .catch(error => {
+          alert("Hiba történt: " + error.message)
+        })
 }

@@ -31,8 +31,19 @@ namespace BACKEND.Controllers
 		[HttpPost]
 		public IActionResult CreateFood([FromBody] Food food)
 		{
-			foodService.CreateFood(food);
-			return Ok();
+			try
+			{
+				foodService.CreateFood(food);
+				return Ok();
+			}
+			catch (FoodAlreadyExistsException ex)
+			{
+				return Conflict(ex.Message);
+			}
+			catch (Exception)
+			{
+				return BadRequest("Hiba történt az élelmiszer hozzáadása közben!");
+			}
 		}
 
 		[HttpDelete("{name}")]

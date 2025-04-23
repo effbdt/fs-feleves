@@ -3,6 +3,12 @@ using BACKEND.Models;
 
 namespace BACKEND.Services
 {
+	public class FoodAlreadyExistsException : Exception
+	{
+		public FoodAlreadyExistsException(string name)
+			: base($"A(z) '{name}' nevű élelmiszer már létezik.") { }
+	}
+
 	public class FoodService : IFoodService
 	{
 		private readonly IFoodRepository _repo;
@@ -14,6 +20,10 @@ namespace BACKEND.Services
 
 		public void CreateFood(Food food)
 		{
+			if (GetFood(food.Name) != null)
+			{
+				throw new FoodAlreadyExistsException(food.Name);
+			}
 			_repo.Create(food);
 		}
 
