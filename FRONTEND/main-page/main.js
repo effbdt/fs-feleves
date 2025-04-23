@@ -23,6 +23,8 @@ async function downloadAndDisplay() {
 
         let tr = document.createElement('tr')
 
+        tr.classList.add('table-info')
+
         let nametd = document.createElement('td')
         let quantitytd = document.createElement('td')
         let datetd = document.createElement('td')
@@ -94,10 +96,10 @@ function createFood() {
                 downloadAndDisplay()
                 reset()
             } else {
-                return resp.text().then(text => alert(text))  
+                return resp.text().then(text => alert(text))
             }
         })
         .catch(error => {
-          alert("Hiba történt: " + error.message)
+            alert("Hiba történt: " + error.message)
         })
 }

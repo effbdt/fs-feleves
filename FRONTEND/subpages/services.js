@@ -46,6 +46,9 @@ function listByExpiration() {
                 else if (dayDifference <= 5) {
                     tr.classList.add('table-warning')
                 }
+                else { 
+                    tr.classList.add('table-info')
+                }
 
                 expirationTable.appendChild(tr)
             });
@@ -75,6 +78,8 @@ function suggestionsList() {
 
             foodList.forEach(food => {
                 let tr = document.createElement('tr')
+
+                tr.classList.add('table-info')
 
                 let nameTd = document.createElement('td')
                 let quantitytd = document.createElement('td')
@@ -135,6 +140,8 @@ function foodRationEstimation() {
                 console.log(i)
 
                 let tr = document.createElement('tr')
+
+                tr.classList.add('table-info')
 
                 let nameTd = document.createElement('td')
                 let estimationTd = document.createElement('td')

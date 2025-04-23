@@ -19,10 +19,6 @@
       "RelativeMoniker": "D:0:0:{2747AEA2-88B0-4C2E-9FFF-3B8A7CF7C949}|BACKEND\\BACKEND.csproj|solutionrelative:backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2747AEA2-88B0-4C2E-9FFF-3B8A7CF7C949}|BACKEND\\BACKEND.csproj|c:\\users\\davidof\\desktop\\elelmiszerkeszletoptimalizalas_effbdt_szasz\\backend\\backend\\services\\ifoodservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2747AEA2-88B0-4C2E-9FFF-3B8A7CF7C949}|BACKEND\\BACKEND.csproj|solutionrelative:backend\\services\\ifoodservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2747AEA2-88B0-4C2E-9FFF-3B8A7CF7C949}|BACKEND\\BACKEND.csproj|c:\\users\\davidof\\desktop\\elelmiszerkeszletoptimalizalas_effbdt_szasz\\backend\\backend\\data\\ifoodrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2747AEA2-88B0-4C2E-9FFF-3B8A7CF7C949}|BACKEND\\BACKEND.csproj|solutionrelative:backend\\data\\ifoodrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -34,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,7 +42,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "IFoodRepository.cs",
               "DocumentMoniker": "C:\\Users\\DAVIDOF\\Desktop\\ELELMISZERKESZLETOPTIMALIZALAS_EFFBDT_SZASZ\\BACKEND\\BACKEND\\Data\\IFoodRepository.cs",
               "RelativeDocumentMoniker": "BACKEND\\Data\\IFoodRepository.cs",
@@ -58,25 +54,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IFoodService.cs",
-              "DocumentMoniker": "C:\\Users\\DAVIDOF\\Desktop\\ELELMISZERKESZLETOPTIMALIZALAS_EFFBDT_SZASZ\\BACKEND\\BACKEND\\Services\\IFoodService.cs",
-              "RelativeDocumentMoniker": "BACKEND\\Services\\IFoodService.cs",
-              "ToolTip": "C:\\Users\\DAVIDOF\\Desktop\\ELELMISZERKESZLETOPTIMALIZALAS_EFFBDT_SZASZ\\BACKEND\\BACKEND\\Services\\IFoodService.cs",
-              "RelativeToolTip": "BACKEND\\Services\\IFoodService.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAQwA0AAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T16:10:12.208Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "FoodService.cs",
               "DocumentMoniker": "C:\\Users\\DAVIDOF\\Desktop\\ELELMISZERKESZLETOPTIMALIZALAS_EFFBDT_SZASZ\\BACKEND\\BACKEND\\Services\\FoodService.cs",
               "RelativeDocumentMoniker": "BACKEND\\Services\\FoodService.cs",
               "ToolTip": "C:\\Users\\DAVIDOF\\Desktop\\ELELMISZERKESZLETOPTIMALIZALAS_EFFBDT_SZASZ\\BACKEND\\BACKEND\\Services\\FoodService.cs",
               "RelativeToolTip": "BACKEND\\Services\\FoodService.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAowB0AAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAkwFwAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-09T16:57:27.141Z",
               "EditorCaption": ""
@@ -91,8 +75,7 @@
               "RelativeToolTip": "BACKEND\\Controllers\\FoodApiController.cs",
               "ViewState": "AgIAABoAAAAAAAAAAAAwwCwAAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T10:04:11.481Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-09T10:04:11.481Z"
             },
             {
               "$type": "Document",
@@ -104,8 +87,7 @@
               "RelativeToolTip": "BACKEND\\Data\\FoodRepository.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAgwB4AAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T09:51:27.29Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-09T09:51:27.29Z"
             },
             {
               "$type": "Document",

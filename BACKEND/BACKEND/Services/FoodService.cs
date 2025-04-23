@@ -90,7 +90,7 @@ namespace BACKEND.Services
 		//gives a rough estimation on monthly usage of a given food item
 		private double RatioEstimation(Food food)
 		{
-			double dayUntilExp = (food.ExpirationDate - DateTime.Now).TotalDays;
+			double dayUntilExp = (food.ExpirationDate.Day - DateTime.Now.Day);
 
 			if (dayUntilExp <= 0)
 			{
