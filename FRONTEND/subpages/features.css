@@ -119,3 +119,33 @@ th, td {
 .conditional-show{
     display: none;
 }
+
+.custom-footer {
+    background: linear-gradient(90deg, #38d39f, #30cfcf);
+    color: #ffffff;
+    font-weight: bold;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    border-top: 1px solid #2fbf8e;
+}
+
+.footer-text {
+    font-size: 1rem;
+    text-decoration: underline;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    text-decoration: underline;
+}
+
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
